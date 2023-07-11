@@ -1,0 +1,117 @@
+<div class="container-fluid">
+  <form #formRecurso = "ngForm">
+    <div class="row">
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="cnum" id="cnum" [(ngModel)]="recurso.cnum" #cnum = "ngModel" required>
+        <label for="cnum" class="form-label">CNUM</label>
+        <i title="Informe a matrícula do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="notesID" id="notesID" [(ngModel)]="recurso.notesID" #notesID = "ngModel" required>
+        <label for="notesID" class="form-label">Notes ID</label>
+        <i title="Informe o nome do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="nomeCliente" id="nomeCliente" [(ngModel)]="recurso.nomeCliente" #nomeCliente = "ngModel" required>
+        <label for="nomeCliente" class="form-label">Nome Cliente</label>
+        <i title="Informe o nome do recurso no ambiente do cliente" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="vaga" id="vaga" [(ngModel)]="recurso.vaga" #vaga = "ngModel" required>
+        <label for="vaga" class="form-label">Vaga</label>
+        <i title="Informe a vaga associada ao recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="work" id="work" [(ngModel)]="recurso.work" #work = "ngModel" required>
+        <label for="work" class="form-label">Work</label>
+        <i title="Informe o work associado ao recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="growth" id="growth" [(ngModel)]="recurso.growth" #growth = "ngModel" required>
+        <label for="growth" class="form-label">Growth</label>
+        <i title="Informe a growth associada ao recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="sl" id="sl" [(ngModel)]="recurso.sl" #sl = "ngModel" required>
+        <label for="sl" class="form-label">SL</label>
+        <i title="Informe a service line associada ao recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="banda" id="banda" [(ngModel)]="recurso.banda" #banda = "ngModel" required>
+        <label for="banda" class="form-label">Banda</label>
+        <i title="Informe a banda do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="perfil" id="perfil" [(ngModel)]="recurso.perfil" #perfil = "ngModel" required>
+        <label for="perfil" class="form-label">Perfil</label>
+        <i title="Informe o perfil do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="pre" id="pre" [(ngModel)]="recurso.pre" #pre = "ngModel" required>
+        <label for="pre" class="form-label">PRE</label>
+        <i title="Informe a PRE do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="comunidade" id="comunidade" [(ngModel)]="recurso.comunidade" #comunidade = "ngModel" required>
+        <label for="comunidade" class="form-label">Comunidade</label>
+        <i title="Informe a comunidade do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="squad" id="squad" [(ngModel)]="recurso.squad" #squad = "ngModel" required>
+        <label for="squad" class="form-label">Squad</label>
+        <i title="Informe a squad do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="dpe" id="dpe" [(ngModel)]="recurso.dpe" #dpe = "ngModel" required>
+        <label for="dpe" class="form-label">DPE</label>
+        <i title="Informe o DPE do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="ltf" id="ltf" [(ngModel)]="recurso.ltf" #ltf = "ngModel" required>
+        <label for="ltf" class="form-label">LTF</label>
+        <i title="Informe o LTF do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="date" class="form-control" placeholder="1" name="inicioAlocacao" id="inicioAlocacao" [(ngModel)]="recurso.inicioAlocacao" #inicioAlocacao = "ngModel" required>
+        <label for="inicioAlocacao" class="form-label">Início Alocação</label>
+        <i title="Informe a data início da alocação do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="date" class="form-control" placeholder="1" name="fimAlocacao" id="fimAlocacao" [(ngModel)]="recurso.fimAlocacao" #fimAlocacao = "ngModel" required>
+        <label for="fimAlocacao" class="form-label">Fim Alocação</label>
+        <i title="Informe a data fim da alocação do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="tipoFunc" id="tipoFunc" [(ngModel)]="recurso.tipoFunc" #tipoFunc = "ngModel" required>
+        <label for="tipoFunc" class="form-label">Tipo de Funcionário</label>
+        <i title="Informe o tipo do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="text" class="form-control" placeholder="1" name="localidade" id="localidade" [(ngModel)]="recurso.localidade" #localidade = "ngModel" required>
+        <label for="localidade" class="form-label">Localidade</label>
+        <i title="Informe a localidade do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="number" class="form-control" placeholder="1" name="capacidadeSemanal" id="capacidadeSemanal" [(ngModel)]="recurso.capacidadeSemanal" #capacidadeSemanal = "ngModel" value="44" min="0" max="50" required>
+        <label for="capacidadeSemanal" class="form-label">Capacidade Semanal</label>
+        <i title="Informe a capacidade semanal de atuação, em horas, do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-4">
+        <input type="number" class="form-control" placeholder="1" name="alocacao" id="alocacao" [(ngModel)]="recurso.alocacao" #alocacao = "ngModel" value="1.00" step='0.01' min="0.00" max="1" required>
+        <label for="alocacao" class="form-label">Alocação</label>
+        <i title="Informe a alocação do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-2">
+        <input type="checkbox" class="form-check-input" name="statusAlocacao" id="statusAlocacao" [(ngModel)]="recurso.statusAlocacao" #statusAlocacao = "ngModel" checked>
+        <label for="statusAlocacao" class="form-label">Status Alocação</label>
+        <i title="Informe o status da alocação do recurso" class="bi bi-patch-question"></i>
+      </div>
+      <div class="form-floating col-2">
+        <input type="checkbox" class="form-check-input" name="recursoAtivo" id="recursoAtivo" [(ngModel)]="recurso.recursoAtivo" #recursoAtivo = "ngModel" checked>
+        <label for="recursoAtivo" class="form-label">Recurso Ativo</label>
+        <i title="Informe o status do recurso" class="bi bi-patch-question"></i>
+      </div>
+    </div>
+  </form>
+  <button type="submit" class="btn btn-success" (click)="cadastrar()" [disabled]="!formRecurso.form.valid" >Cadastrar</button>
+</div>
