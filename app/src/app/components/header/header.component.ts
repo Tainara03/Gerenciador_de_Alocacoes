@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ResourceService } from 'src/app/shared/resource.service';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit{
 
-  ngOnInit() {
+  name: string = '';
 
+  constructor(private resourceService: ResourceService) {}
+
+  ngOnInit(): void {
+   
   }
   
 

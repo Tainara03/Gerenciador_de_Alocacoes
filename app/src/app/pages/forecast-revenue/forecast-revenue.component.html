@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <button type="button" class="btn btn-primary" routerLink="/resource-control/register">Cadastrar novo recurso</button>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="find" [(ngModel)]="find" (input)="busca(find)">
+    </form>
+</div>
+
+<div class="table-container">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">CNUM</th>
+                <th scope="col">Notes ID</th>
+                <th scope="col">Vaga</th>
+                <th scope="col">Work</th>
+                <th scope="col">Growth</th>
+                <th scope="col">SL</th>
+                <th scope="col">Banda</th>
+                <th scope="col">Perfil</th>
+                <th scope="col">PRE</th>
+                <th scope="col">Comunidade</th>
+                <th scope="col">Squad</th>
+                <th scope="col">DPE</th>
+                <th scope="col">LTF</th>
+                <th scope="col">Data</th>
+                <th scope="col">Chave</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let recurso of recursos">
+                <td> <input type="text" [(ngModel)]="recurso.cnum" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.notesID" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.vaga" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.work" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.growth" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.sl" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.banda" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.perfil" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.pre" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.comunidade" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.squad" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.dpe" [disabled]="true"></td>
+                <td> <input type="text" [(ngModel)]="recurso.ltf" [disabled]="true"></td>
+                <td scope="row"> {{ acrescentarData(recurso.inicioAlocacao, recurso.intervaloDias) }} </td>
+                <th scope="row"> {{ recurso.id }} </th>
+                <td><a class="bi bi-pencil-square" [routerLink]="['/resource-control/edit', recurso.id]" title="Editar" alt="Editar"></a></td>
+                <td><a class="bi bi-trash" (click)="remover(recurso)" title="Remover" alt="Remover"></a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="recursos.length == 0">Nenhum recurso encontrado.</p>
+</div>

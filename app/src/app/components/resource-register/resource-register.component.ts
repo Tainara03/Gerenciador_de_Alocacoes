@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { ResourceService } from 'src/app/shared/resource.service';
-import { Recurso } from 'src/app/shared/resource-table.model';
+import { Recurso } from 'src/app/shared/models.model';
 import { NgForm } from '@angular/forms';
 
 @Component({
